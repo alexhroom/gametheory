@@ -1,0 +1,14 @@
+Meeting 2023-02-14
+- finance:
+  - risk in stocks etc., arbitrage, sabotage
+  - insider trading
+
+
+- political:
+  - how quickly do voting systems devolve into two-parties (maybe using stochastics)
+  - design of political systems/houses etc.
+--------------------
+
+between meetings:
+- some ideas:
+  - modelling 
