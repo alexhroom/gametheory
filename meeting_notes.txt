@@ -1,0 +1,32 @@
+Meeting 2023-02-14
+- finance:
+  - risk in stocks etc., arbitrage, sabotage
+  - insider trading
+
+
+- political:
+  - how quickly do voting systems devolve into two-parties (maybe using stochastics)
+  - design of political systems/houses etc.
+--------------------
+
+Meeting 2023-02-27
+- project will consist of two parts:
+  - a normal form game to model regulator vs. trader 
+  - replicator dynamics to model wealth over time
+
+---------------------
+
+Meeting 2023-03-03
+- Parameters for normal form game:
+  - Trader:
+    - fear (of being caught)
+    - financial risk (of normal trade)
+    - reputation (as a trusted trader)
+  - Regulator:
+    - suspicion (of insider trading occuring)
+    - budget (either affected by previous games, or not)
+
+- most of these will be functions of the repeated game's history, 
+  or for larger populations some (such as financial risk) would be random
+
+- we 

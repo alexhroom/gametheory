@@ -1,0 +1,58 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage[numbers,sort]{natbib}
+\usepackage{hyperref}
+\usepackage[justification=centering]{caption}
+\usepackage{amsmath}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black
+}
+
+\begin{document}
+
+We stage our scenario as a normal form game, with:
+\begin{itemize}
+\item Two players: a trader $\mathcal{T}$, and a trading regulator $\mathcal{R}$, who are the row and column players respectively;
+\item The trader's actions as a 'regular' trade, $r_1$ vs an 'insider' trade, $r_2$;
+\item The regulator's actions as 'lax' $c_1$ or 'strict' investigation $c_2$;
+\item And financial payoff matrices for both players as follows;
+\end{itemize}
+\begin{equation*}
+\begin{split}
+    \mathcal{T} = 
+    \begin{pmatrix}
+    0 & 2 \\
+    5 & -5
+    \end{pmatrix}
+\end{split}
+\quad\quad
+\begin{split}
+    \mathcal{R} = 
+    \begin{pmatrix}
+    0 & -2 \\
+    -2 & 3
+    \end{pmatrix}
+\end{split}
+\end{equation*}
+
+The 'regular' trade has a 'neutral' expected financial gain, and a greater degree of financial risk modelled in the strategy of the trader; however, the trader may also be afraid to be caught insider trading, and regular trading could build up a good reputation with regulators. Likewise for the regulator, there is a cost associated with investigating insider trading (regardless of whether anyone is caught) and some degree of bureaucratic punishment for failing to catch insider traders.
+
+The strategies depend on a number of parameters; let them be
+\begin{equation*}
+\begin{split}
+    \sigma_\mathcal{T} = (x, 1-x)
+\end{split}
+\quad\quad
+\begin{split}
+    \sigma_\mathcal{R} = (y, 1-y)
+\end{split}
+\end{equation*}
+where $x$ represents the trader's (financial) risk-aversion, fear of being caught, and desire for a reputation with regulators; $y$ represents the regulator's suspicion of fraudulent behaviour, as well as budgetary constraints (they can't afford to just investigate all the time if nobody is being caught!). These parameters are handled as a function of the games' history. (e.g. if the regulator has investigated in 3 out of 5 games, fear would be higher than if they'd investigated in 1 out of 5)
+\end{document}
