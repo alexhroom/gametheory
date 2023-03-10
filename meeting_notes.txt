@@ -3,10 +3,10 @@ Meeting 2023-02-14
   - risk in stocks etc., arbitrage, sabotage
   - insider trading
 
-
 - political:
   - how quickly do voting systems devolve into two-parties (maybe using stochastics)
   - design of political systems/houses etc.
+
 --------------------
 
 Meeting 2023-02-27
@@ -29,4 +29,9 @@ Meeting 2023-03-03
 - most of these will be functions of the repeated game's history, 
   or for larger populations some (such as financial risk) would be random
 
-- we 
+---------------------
+
+Meeting 2023-03-10
+- developed some strategies
+- idea:
+  - one-sided Moran process: traders die out and reproduce, traders do not

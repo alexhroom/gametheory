@@ -17,42 +17,38 @@
 
 \begin{document}
 
+\section{Methods}
+
 We stage our scenario as a normal form game, with:
 \begin{itemize}
 \item Two players: a trader $\mathcal{T}$, and a trading regulator $\mathcal{R}$, who are the row and column players respectively;
-\item The trader's actions as a 'regular' trade, $r_1$ vs an 'insider' trade, $r_2$;
-\item The regulator's actions as 'lax' $c_1$ or 'strict' investigation $c_2$;
+\item The trader's actions as a 'regular' trade vs an 'insider' trade;
+\item The regulator's actions as 'no investigation' vs 'investigation';
 \item And financial payoff matrices for both players as follows;
 \end{itemize}
 \begin{equation*}
 \begin{split}
     \mathcal{T} = 
     \begin{pmatrix}
-    0 & 2 \\
-    5 & -5
+    1 & 1 \\
+    4 & -5
     \end{pmatrix}
 \end{split}
 \quad\quad
 \begin{split}
     \mathcal{R} = 
     \begin{pmatrix}
-    0 & -2 \\
-    -2 & 3
+    1 & -2 \\
+    -3 & 5
     \end{pmatrix}
 \end{split}
 \end{equation*}
 
-The 'regular' trade has a 'neutral' expected financial gain, and a greater degree of financial risk modelled in the strategy of the trader; however, the trader may also be afraid to be caught insider trading, and regular trading could build up a good reputation with regulators. Likewise for the regulator, there is a cost associated with investigating insider trading (regardless of whether anyone is caught) and some degree of bureaucratic punishment for failing to catch insider traders.
+i.e. a 'normal' trade has a small financial gain, but is immune to investigation - an insider trade, on the other hand, is much more lucrative but sustains heavy fines if caught. For the regulator, they lose out bureaucratically on 'false positive' investigations and on failing to catch insider traders\footnote{Statistical methods such as those in \citet{bris2005insider} can recognise that insider trading has occurred, but not who is doing it.}, but are heavily rewarded for catching fraud. 
 
-The strategies depend on a number of parameters; let them be
-\begin{equation*}
-\begin{split}
-    \sigma_\mathcal{T} = (x, 1-x)
-\end{split}
-\quad\quad
-\begin{split}
-    \sigma_\mathcal{R} = (y, 1-y)
-\end{split}
-\end{equation*}
-where $x$ represents the trader's (financial) risk-aversion, fear of being caught, and desire for a reputation with regulators; $y$ represents the regulator's suspicion of fraudulent behaviour, as well as budgetary constraints (they can't afford to just investigate all the time if nobody is being caught!). These parameters are handled as a function of the games' history. (e.g. if the regulator has investigated in 3 out of 5 games, fear would be higher than if they'd investigated in 1 out of 5)
+\subsection{Information}
+In the strategies, we had to note that the two players do not have equal information. The trader always knows when they have been investigated, but the regulator only knows the trader has done inside trading if they have caught them doing it! Compare this to the Prisoner's Dilemma - here, one player can recognise the other player defecting, but the other can only recognise simultaneous defection.
+
+\bibliographystyle{unsrtnat}
+\bibliography{bibliography}
 \end{document}
