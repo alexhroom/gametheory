@@ -38,7 +38,6 @@ def trade_tournament(traders, regulators):
             rtotal += rscore
 
         outputs += [[matchup[0].name, matchup[1].name, ttotal/500, rtotal/500]]
-
-    return pd.DataFrame(outputs, columns=["trader", "regulator", "trader_score", "regulator_score"])
-
         
+    verbose_manager.finish("Tournament")
+    return pd.DataFrame(outputs, columns=["trader", "regulator", "trader_score", "regulator_score"])
