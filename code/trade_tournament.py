@@ -29,5 +29,3 @@ def trade_tournament(traders, regulators, trade_game):
 
     verbose_manager.finish("Tournament")
     return pd.DataFrame(outputs, columns=["trader", "regulator", "trader_score", "regulator_score"])
-
-        
