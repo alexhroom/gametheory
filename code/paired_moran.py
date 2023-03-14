@@ -82,8 +82,9 @@ def moran_step(traders: pd.Series, regulators: pd.Series, game):
 
         return quantities
 
-    return birth_and_death(traders, trader_fitness), birth_and_death(
-        regulators, regulator_fitness
+    return (
+        birth_and_death(traders, trader_fitness),
+        birth_and_death(regulators, regulator_fitness),
     )
 
 
