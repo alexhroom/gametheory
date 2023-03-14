@@ -1,10 +1,9 @@
-"""File for trade-game strategies"""
-import random
-
+"""Contains classes for trade-game strategies"""
 from axelrod.action import Action
 from axelrod.player import Player
 
 C, D = Action.C, Action.D
+
 
 def _modify_probability(base, modifier):
     """Adds or subtracts from a variable, ensuring it's in [0, 1]"""
@@ -13,6 +12,7 @@ def _modify_probability(base, modifier):
     if base + modifier < 0:
         return 0
     return base + modifier
+
 
 class SuspiciousGrudge(Player):
     """
@@ -43,14 +43,13 @@ class SuspiciousGrudge(Player):
             if (self.history[-1], opponent.history[-1]) == (D, D):
                 self.suspicion = 1
             elif opponent.history[-1] == D:
-                self.suspicion = _modify_probability(self.suspicion, 0.2)
+                self.suspicion = _modify_probability(self.suspicion, 0.1)
             else:
-                self.suspicion = _modify_probability(self.suspicion, -0.2)
+                self.suspicion = _modify_probability(self.suspicion, -0.05)
         except IndexError:
             pass
 
         return self._random.random_choice(1 - self.suspicion)
-
 
 
 class SuspiciousForgiving(Player):
@@ -193,5 +192,3 @@ class NceBitten(Player):
             pass
 
         return D
-
-

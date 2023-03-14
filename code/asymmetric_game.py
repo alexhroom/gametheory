@@ -1,4 +1,4 @@
-from itertools import product
+"""Class for asymmetric games."""
 from typing import Tuple, Union
 
 import numpy as np
@@ -6,8 +6,11 @@ import axelrod as axl
 
 C, D = axl.Action.C, axl.Action.D
 
-class AsymmetricGame:
 
+class AsymmetricGame:
+    """An asymmetric game that works with the Axelrod system."""
+
+    # pylint: disable=invalid-name, too-few-public-methods
     def __init__(self, A: np.array, B: np.array) -> None:
         """
         Creates an asymmetric game which can pretend to be an Axelrod game.
@@ -27,8 +30,9 @@ class AsymmetricGame:
             (D, C): (A[1][0], B[1][0]),
         }
 
-
-    def score(self, pair: Tuple[axl.Action, axl.Action]) -> Tuple[Union[int, float], Union[int, float]]:
+    def score(
+        self, pair: Tuple[axl.Action, axl.Action]
+    ) -> Tuple[Union[int, float], Union[int, float]]:
         """Returns the appropriate score for a decision pair.
         Parameters
         ----------
