@@ -1,0 +1,59 @@
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage[numbers,sort]{natbib}
+\usepackage{hyperref}
+\usepackage[justification=centering]{caption}
+\usepackage{amsmath}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black
+}
+\begin{document}
+\section{Introduction}
+ An insider trade is defined as "the practice of purchasing or selling a publicly-traded company’s securities while in possession of material information that is not yet public information." This practise may be illegal but it is not uncommon in today's markets. This project sets out to investigate the relationship between the frequency of inside trades and strictness of the regulators in the market. The aim is to test the effectiveness of a number of different strategies from the Axelrod Library against regulators where investigation is initially free. Then, introducing restrictive boundaries on investigation frequency, such as budgets and penalties for false positives, to see if there are superior strategies to avoid detection.
+ \section{hypothesis}
+https://corporatefinanceinstitute.com/resources/wealth-management/what-is-insider-trading/
+
+\section{Methods}
+
+We stage our scenario as a normal form game, with:
+\begin{itemize}
+\item Two players: a trader $\mathcal{T}$, and a trading regulator $\mathcal{R}$, who are the row and column players respectively;
+\item The trader's actions as a 'regular' trade vs an 'insider' trade;
+\item The regulator's actions as 'no investigation' vs 'investigation';
+\item And financial payoff matrices for both players as follows;
+\end{itemize}
+\begin{equation*}
+\begin{split}
+    \mathcal{T} = 
+    \begin{pmatrix}
+    1 & 1 \\
+    4 & -5
+    \end{pmatrix}
+\end{split}
+\quad\quad
+\begin{split}
+    \mathcal{R} = 
+    \begin{pmatrix}
+    1 & -2 \\
+    -3 & 5
+    \end{pmatrix}
+\end{split}
+\end{equation*}
+
+i.e. a 'normal' trade has a small financial gain, but is immune to investigation - an insider trade, on the other hand, is much more lucrative but sustains heavy fines if caught. For the regulator, they lose out bureaucratically on 'false positive' investigations and on failing to catch insider traders\footnote{Statistical methods such as those in \citet{bris2005insider} can recognise that insider trading has occurred, but not who is doing it.}, but are heavily rewarded for catching fraud. 
+
+\subsection{Information}
+In the strategies, we had to note that the two players do not have equal information. The trader always knows when they have been investigated, but the regulator only knows the trader has done inside trading if they have caught them doing it (although, again as in \citet{bris2005insider}, they can detect insider trading \emph{has occured} without catching it)! Compare this to the Prisoner's Dilemma - here, one player can recognise the other player defecting, but the other can only recognise simultaneous defection.
+
+
+\bibliographystyle{unsrtnat}
+\bibliography{bibliography}
+\end{document}
