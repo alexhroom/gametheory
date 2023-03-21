@@ -106,10 +106,10 @@ def paired_moran(traders: list, regulators: list, game):
     trader_pop_data = {str(t): [1] for t in traders}
     regulator_pop_data = {str(r): [1] for r in regulators}
 
+    timeout_ticks = 0
     while len(trader_series) > 1 or len(regulator_series) > 1:
 
         # timeout if hanging in a cycle
-        timeout_ticks = 0
         if len(trader_series) == 1 or len(regulator_series) == 1:
             timeout_ticks += 1
             if timeout_ticks > 5:
@@ -117,7 +117,7 @@ def paired_moran(traders: list, regulators: list, game):
                 # just take dominant allele and return
                 trader_series = trader_series[trader_series==trader_series.max()]
                 regulator_series = regulator_series[regulator_series==regulator_series.max()]
-                break
+                continue
 
         trader_series, regulator_series = moran_step(
             trader_series, regulator_series, game

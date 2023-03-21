@@ -1,5 +1,6 @@
 """Script to gather data for Paired Moran."""
 from datetime import datetime
+from os import stat
 
 import axelrod as axl
 import numpy as np
@@ -45,8 +46,10 @@ winners_file = open("winners.csv", "a", encoding="utf-8")
 pop_file = open("pop_per_turn.csv", "a", encoding="utf-8")
 
 # write headers
-winners_file.write("time,winning_trader,winning_regulator\n")
-pop_file.write("time,type,player_name,pop_per_turn\n")
+if stat("winners.csv").st_size == 0:
+    winners_file.write("time,winning_trader,winning_regulator\n")
+if stat("pop_per_turn.csv").st_size == 0:
+    pop_file.write("time,type,player_name,pop_per_turn\n")
 
 try:
     while True:
@@ -57,9 +60,9 @@ try:
         for trader in t_pop:
             pop_file.write(f"{str(datetime.now())},trader,{trader},{t_pop[trader]}\n")
         for regulator in r_pop:
-            pop_file.write(f"{str(datetime.now())},trader,{regulator},{r_pop[regulator]}\n")
+            pop_file.write(f"{str(datetime.now())},regulator,{regulator},{r_pop[regulator]}\n")
         print(
-            f"Completed game: {str(datetime.now())},{winning_trader.keys()[0]},{winning_reg.keys()[0]}"
+            f"Completed game: {str(datetime.now())},{winning_trader},{winning_reg}"
         )
 except:
     winners_file.close()
