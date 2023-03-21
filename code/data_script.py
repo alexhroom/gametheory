@@ -41,17 +41,26 @@ regulators = [
     ts.BudgetStretcher(),
 ]
 
-file = open("results.csv", "a", encoding="utf-8")
-file.write("time,winning_trader,winning_regulator")
+winners_file = open("winners.csv", "a", encoding="utf-8")
+pop_file = open("pop_per_turn.csv", "a", encoding="utf-8")
+
+# write headers
+winners_file.write("time,winning_trader,winning_regulator\n")
+pop_file.write("time,type,player_name,pop_per_turn\n")
+
 try:
     while True:
-        file.write("Hello world!")
-        winning_trader, winning_reg = pm.paired_moran(traders, regulators, trade_game)
-        file.write(
-            f"{str(datetime.now())},{winning_trader.keys()[0]},{winning_reg.keys()[0]}"
+        winning_trader, winning_reg, t_pop, r_pop = pm.paired_moran(traders, regulators, trade_game)
+        winners_file.write(
+            f"{str(datetime.now())},{winning_trader},{winning_reg}\n"
         )
+        for trader in t_pop:
+            pop_file.write(f"{str(datetime.now())},trader,{trader},{t_pop[trader]}\n")
+        for regulator in r_pop:
+            pop_file.write(f"{str(datetime.now())},trader,{regulator},{r_pop[regulator]}\n")
         print(
             f"Completed game: {str(datetime.now())},{winning_trader.keys()[0]},{winning_reg.keys()[0]}"
         )
 except:
-    file.close()
+    winners_file.close()
+    pop_file.close()

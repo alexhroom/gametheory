@@ -102,12 +102,34 @@ def paired_moran(traders: list, regulators: list, game):
     trader_series = pd.Series({str(t): traders.count(t) for t in traders})
     regulator_series = pd.Series({str(r): regulators.count(r) for r in regulators})
 
+    # track population data per round for each group 
+    trader_pop_data = {str(t): [1] for t in traders}
+    regulator_pop_data = {str(r): [1] for r in regulators}
+
     while len(trader_series) > 1 or len(regulator_series) > 1:
+
+        # timeout if hanging in a cycle
+        timeout_ticks = 0
+        if len(trader_series) == 1 or len(regulator_series) == 1:
+            timeout_ticks += 1
+            if timeout_ticks > 5:
+                print("Timed out")
+                # just take dominant allele and return
+                trader_series = trader_series[trader_series==trader_series.max()]
+                regulator_series = regulator_series[regulator_series==regulator_series.max()]
+                break
+
         trader_series, regulator_series = moran_step(
             trader_series, regulator_series, game
         )
+        for trader in trader_series.keys():
+            trader_pop_data[trader].append(trader_series[trader])
+
+        for regulator in regulator_series.keys():
+            regulator_pop_data[regulator].append(regulator_series[regulator])
+
         trader_series = trader_series[trader_series != 0]
         regulator_series = regulator_series[regulator_series != 0]
         print(trader_series, regulator_series)
 
-    return trader_series, regulator_series
+    return trader_series.keys()[0], regulator_series.keys()[0], trader_pop_data, regulator_pop_data
