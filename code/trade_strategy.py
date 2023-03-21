@@ -90,6 +90,39 @@ class SuspiciousForgiving(Player):
         return self._random.random_choice(1 - self.suspicion)
 
 
+class BudgetStretcher(Player):
+    """
+    A regulator player who will always investigate unless
+    their total score is below zero.
+    """
+
+    name = "BudgetStretcher"
+    classifier = {
+        "memory_depth": 1,
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self):
+        self.score = 0
+        super().__init__()
+        self.game = self.match_attributes["game"]
+
+    def strategy(self, opponent: Player) -> Action:
+        """Actual strategy definition that determines player's action."""
+        if not self.history:
+            return D
+
+        self.score += self.game.score((opponent.history[-1], self.history[-1]))[1]
+
+        if self.score > 0:
+            return D
+        return C
+
+
 class Careful(Player):
     """
     A trader player with a 'suspicion' variable.
@@ -187,6 +220,33 @@ class NceBitten(Player):
             if (self.history[-1], opponent.history[-1]) == (D, D):
                 self.stings_left -= 1
             if self.stings_left == 0:
+                return C
+        except IndexError:
+            pass
+
+        return D
+
+
+class CoastClear(Player):
+    """
+    A trader player who always inside trades unless investigated on the
+    previous round.
+    """
+
+    name = "CoastClear"
+    classifier = {
+        "memory_depth": 1,
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def strategy(self, opponent: Player) -> Action:
+        """Actual strategy definition that determines player's action."""
+        try:
+            if opponent.history[-1] == D:
                 return C
         except IndexError:
             pass

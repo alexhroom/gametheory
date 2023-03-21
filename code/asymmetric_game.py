@@ -45,3 +45,11 @@ class AsymmetricGame:
             Scores for two player resulting from their actions.
         """
         return self.scores[pair]
+
+    def RPST(self):
+        """Returns RPST for the trader player."""
+        R = self.scores[(C, C)][0]
+        P = self.scores[(D, D)][0]
+        S = self.scores[(C, D)][0]
+        T = self.scores[(D, C)][0]
+        return R, P, S, T
