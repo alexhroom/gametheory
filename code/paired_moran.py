@@ -115,6 +115,7 @@ def paired_moran(traders: list, regulators: list, game):
             if timeout_ticks > 5:
                 print("Timed out")
                 # just take dominant allele and return
+                timeout_ticks = 0
                 trader_series = trader_series[trader_series==trader_series.max()]
                 regulator_series = regulator_series[regulator_series==regulator_series.max()]
                 continue
