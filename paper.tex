@@ -24,8 +24,50 @@
 \maketitle
 
 \section{Introduction}
+Insider trading is the practice of purchasing or selling a publicly-traded company’s securities\footnote{i.e. assets which can be traded} while in possession of information that is not yet public. This practice may be illegal but it is not uncommon in today's markets; insider traders enjoy better returns with less risk. This project sets out to investigate the relationship between strategies for both inside trading and its regulation. The aim is to test the effectiveness of a number of different strategies between inside traders and regulators, as well as how these relationships change under a co-evolutionary dynamic to see if there are superior strategies to avoid detection. 
 
+This has been studied before in papers such as \citet{smales2017game}, which use Monte Carlo simulation. We instead use evolutionary dynamics to model these interactions.
 
+\section{Methods}
+Our stage game has two players, a trader $\mathcal{T}$, and a trading regulator $\mathcal{R}$, who are the row and column players respectively; the trader's actions as a 'regular' trade vs an 'insider' trade; the regulator's actions as 'no investigation' vs 'investigation'; and financial payoff matrices for both players as follows;
+\begin{equation*}
+\begin{split}
+    \mathcal{T} = 
+    \begin{pmatrix}
+    1 & 1 \\
+    6 & -10
+    \end{pmatrix}
+\end{split}
+\quad\quad
+\begin{split}
+    \mathcal{R} = 
+    \begin{pmatrix}
+    1 & -1 \\
+    -3 & 5
+    \end{pmatrix}
+\end{split}
+\end{equation*}
+
+i.e. a 'normal' trade has a small financial gain, but is immune to investigation - an insider trade, on the other hand, is much more lucrative but sustains heavy fines if caught. The regulator is punished on 'false positive' investigations and on failing to catch insider traders\footnote{Statistical methods such as those in \citet{bris2005insider} can recognise that insider trading has occurred, but not who is doing it.}, but are rewarded for catching fraud. 
+
+\subsection{Information}
+In the strategies, we had to note that the two players do not have equal information. The trader always knows when they have been investigated, but the regulator only knows the trader has done inside trading if they have caught them doing it! Compare this to the Prisoner's Dilemma - here, one player can recognise the other player defecting, but the other can only recognise simultaneous defection.
+
+\subsection{Evolution}
+We then create strategies for our game using the Axelrod library \citep{axelrodproject}. We have written code to implement asymmetric games into the library, and then used tournaments in those asymmetric games (with row tournament players as traders, column as regulators) to simulate a 'paired Moran process'. This is a simplification of the graph-based Moran process \citep{shakarian2013novel}, which takes two populations; $P_1$ of row players, and $P_2$ of column players. Then the paired Moran process algorithm begins:
+\begin{enumerate}
+\item Calculate the fitness of each member of each population against the \emph{other} population. For example, for the Hawk-Dove game if $P_1$ = \{2 hawk, 1 dove\} and $P_2$ = \{1 hawk, 2 dove\}, the fitness of the dove in $P_1$ is calculated based on the game outcomes against the 1 hawk and 2 doves in $P_2$.
+\item Birth and death for each population is then calculated from these fitnesses in the same way as the regular Moran process. This is done independently for each population (e.g. 1 birth and 1 death in $P_1$, \emph{and} 1 birth and 1 death in $P_2$)
+\item Repeat until each population is homogeneous.
+\end{enumerate}
+
+As opposed to the usual Moran process, this allows us to simulate situations where it may not be suitable for every player to interact with every other player; traders and regulators do not interact among themselves in the situation we are modelling. This allows us to see how trading behaviour co-evolves with regulation behaviour over time, as separate yet dependent populations.
+
+The outcome scores of each matchup in the tournament are an average of 500 matches of 500 repetitions each; the repetitions model consecutive trading days.
+
+\section{Results}
+
+\section{Conclusion}
 \bibliographystyle{unsrtnat}
 \bibliography{bibliography}
 
