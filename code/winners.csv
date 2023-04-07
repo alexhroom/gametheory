@@ -1,0 +1,202 @@
+time,winning_trader,winning_regulator
+2023-03-21 18:36:31.893743,CoastClear,Grudge
+2023-03-21 18:45:48.112880,Cooperator,SuspiciousForgiving
+2023-03-21 18:59:39.669772,Cooperator,SuspiciousGrudge
+2023-03-21 19:09:02.612282,Random: 0.8,SuspiciousGrudge
+2023-03-21 19:15:47.269791,Cooperator,Grudge
+2023-03-21 19:25:59.436898,NceBitten: 5,SuspiciousForgiving
+2023-03-21 19:36:13.033369,NceBitten: 5,SuspiciousGrudge
+2023-03-21 19:43:00.361346,CoastClear,Grudge
+2023-03-21 19:53:02.097850,CoastClear,Grudge
+2023-03-21 20:02:23.256607,NceBitten: 5,SuspiciousForgiving
+2023-03-21 20:14:44.020304,Random: 0.8,Grudge
+2023-03-21 20:24:41.850331,Cooperator,SuspiciousGrudge
+2023-03-21 20:31:53.601936,Cooperator,Grudge
+2023-03-21 20:38:04.544923,Cooperator,SuspiciousForgiving
+2023-03-22 16:44:39.348283,Cooperator,SuspiciousGrudge
+2023-03-22 16:51:14.518882,Cooperator,Grudge
+2023-03-22 17:00:17.046986,Random: 0.8,SuspiciousGrudge
+2023-03-22 17:08:04.004411,CoastClear,SuspiciousForgiving
+2023-03-22 17:13:06.385550,Cooperator,SuspiciousForgiving
+2023-03-22 17:20:35.403234,CoastClear,Grudge
+2023-03-22 17:31:36.395677,NceBitten: 5,SuspiciousGrudge
+2023-03-22 17:40:18.023118,Random: 0.8,SuspiciousForgiving
+2023-03-22 17:50:49.918230,Cooperator,SuspiciousGrudge
+2023-03-22 18:04:18.783085,NceBitten: 5,SuspiciousGrudge
+2023-03-22 18:12:27.817026,Cooperator,SuspiciousGrudge
+2023-03-22 18:20:50.558052,Cooperator,SuspiciousForgiving
+2023-03-22 18:30:44.051670,Cooperator,SuspiciousGrudge
+2023-03-22 18:40:07.003927,Careful,Grudge
+2023-03-22 18:49:31.452512,Cooperator,Random: 0.2
+2023-03-22 19:00:59.100671,Cooperator,SuspiciousGrudge
+2023-03-23 17:12:15.266025,CoastClear,Grudge
+2023-03-23 17:19:12.539156,Cooperator,Grudge
+2023-03-23 17:25:16.793958,Cooperator,SuspiciousGrudge
+2023-03-23 17:44:18.567061,NceBitten: 5,SuspiciousGrudge
+2023-03-23 17:55:27.907255,Cooperator,SuspiciousGrudge
+2023-03-23 18:02:40.433914,Cooperator,SuspiciousForgiving
+2023-03-23 18:09:01.925787,NceBitten: 5,SuspiciousGrudge
+2023-03-23 18:14:13.204235,NceBitten: 5,SuspiciousGrudge
+2023-03-23 18:24:27.105003,NceBitten: 5,SuspiciousGrudge
+2023-03-23 20:47:37.152789,CoastClear,SuspiciousForgiving
+2023-03-23 21:00:57.272527,CoastClear,SuspiciousForgiving
+2023-03-23 21:09:19.897111,Tit For 2 Tats,SuspiciousGrudge
+2023-03-23 21:17:29.169887,Cooperator,SuspiciousGrudge
+2023-03-23 21:25:50.412092,NceBitten: 5,SuspiciousGrudge
+2023-03-23 21:34:24.542396,NceBitten: 5,SuspiciousForgiving
+2023-03-23 21:42:01.235558,NceBitten: 5,SuspiciousForgiving
+2023-03-23 21:51:28.106918,Careful,SuspiciousForgiving
+2023-03-23 22:00:13.352944,Cooperator,SuspiciousForgiving
+2023-03-23 22:08:12.981235,Cooperator,SuspiciousGrudge
+2023-03-23 22:22:30.665617,Careful,SuspiciousForgiving
+2023-03-23 22:29:30.746923,NceBitten: 5,SuspiciousGrudge
+2023-03-23 22:38:19.233871,Cooperator,SuspiciousForgiving
+2023-03-23 22:48:46.847677,CoastClear,SuspiciousGrudge
+2023-03-23 22:52:56.682393,Random: 0.8,SuspiciousForgiving
+2023-03-23 23:04:45.721756,Careful,SuspiciousForgiving
+2023-03-23 23:16:07.076814,CoastClear,SuspiciousForgiving
+2023-03-23 23:24:15.245216,Cooperator,SuspiciousGrudge
+2023-03-23 23:32:50.371462,CoastClear,BudgetStretcher
+2023-03-23 23:43:22.504195,Cooperator,Grudge
+2023-03-23 23:52:33.106170,Careful,Random: 0.2
+2023-03-24 00:00:18.078756,NceBitten: 5,SuspiciousGrudge
+2023-03-24 00:10:03.249613,Cooperator,SuspiciousForgiving
+2023-03-24 00:21:13.025097,NceBitten: 5,SuspiciousGrudge
+2023-03-24 00:28:25.431112,CoastClear,Grudge
+2023-03-24 00:36:58.124445,NceBitten: 5,SuspiciousGrudge
+2023-03-24 00:47:30.537151,NceBitten: 5,SuspiciousGrudge
+2023-03-24 00:53:40.237284,Random: 0.8,SuspiciousGrudge
+2023-03-24 01:00:31.440869,Random: 0.8,SuspiciousForgiving
+2023-03-24 14:27:20.574173,NceBitten: 5,SuspiciousForgiving
+2023-03-24 14:38:45.495625,CoastClear,Grudge
+2023-03-24 14:49:44.916150,CoastClear,SuspiciousForgiving
+2023-03-24 14:56:11.326865,Cooperator,Grudge
+2023-03-24 15:10:00.835593,CoastClear,SuspiciousForgiving
+2023-03-24 15:19:56.415989,Random: 0.8,SuspiciousGrudge
+2023-03-24 15:25:51.954841,Cooperator,SuspiciousGrudge
+2023-03-24 15:34:12.060200,NceBitten: 5,SuspiciousForgiving
+2023-03-24 15:43:41.904121,NceBitten: 5,SuspiciousGrudge
+2023-03-24 15:53:59.601113,Random: 0.8,SuspiciousForgiving
+2023-03-24 16:01:45.260652,Random: 0.8,SuspiciousForgiving
+2023-03-24 16:11:01.648934,Cooperator,SuspiciousGrudge
+2023-03-24 16:24:13.213360,NceBitten: 5,SuspiciousGrudge
+2023-03-24 16:37:37.229822,CoastClear,SuspiciousForgiving
+2023-03-24 16:46:42.404735,Cooperator,SuspiciousGrudge
+2023-03-24 16:56:25.337546,NceBitten: 5,SuspiciousGrudge
+2023-03-24 17:06:41.708270,Cooperator,SuspiciousGrudge
+2023-03-24 17:14:45.776325,CoastClear,Random: 0.2
+2023-03-24 17:25:11.267033,Cooperator,SuspiciousGrudge
+2023-03-24 17:31:13.123561,Cooperator,SuspiciousForgiving
+2023-03-24 17:35:55.995768,Cooperator,SuspiciousGrudge
+2023-03-24 17:46:56.501961,NceBitten: 5,SuspiciousForgiving
+2023-03-24 17:55:14.423280,Cooperator,SuspiciousGrudge
+2023-03-24 18:02:50.721229,Cooperator,SuspiciousForgiving
+2023-03-24 18:14:00.427171,NceBitten: 5,Random: 0.2
+2023-03-26 10:42:19.354117,Cooperator,SuspiciousGrudge
+2023-03-26 10:53:08.830816,Cooperator,SuspiciousGrudge
+2023-03-26 11:00:28.355720,CoastClear,Grudge
+2023-03-26 11:05:39.809668,Cooperator,Random: 0.2
+2023-03-26 11:16:25.794835,NceBitten: 5,SuspiciousForgiving
+2023-03-26 11:25:12.033953,CoastClear,SuspiciousForgiving
+2023-03-26 11:33:34.898790,Cooperator,SuspiciousForgiving
+2023-03-26 11:42:48.331940,Cooperator,SuspiciousGrudge
+2023-03-26 11:51:57.347447,Cooperator,Grudge
+2023-03-26 12:01:51.385541,Cooperator,SuspiciousGrudge
+2023-03-26 12:13:22.912948,Cooperator,Grudge
+2023-03-26 12:19:11.042315,Cooperator,SuspiciousGrudge
+2023-03-26 12:25:52.601319,Careful,SuspiciousForgiving
+2023-03-26 12:31:58.684885,CoastClear,SuspiciousForgiving
+2023-03-26 12:40:41.834116,NceBitten: 5,SuspiciousGrudge
+2023-03-26 12:47:59.202658,Cooperator,SuspiciousForgiving
+2023-03-26 12:55:33.148045,CoastClear,SuspiciousForgiving
+2023-03-26 13:01:34.859661,NceBitten: 5,SuspiciousForgiving
+2023-03-26 13:10:46.000535,Cooperator,SuspiciousGrudge
+2023-03-26 13:15:39.278441,Cooperator,SuspiciousGrudge
+2023-03-26 13:23:37.494788,CoastClear,Random: 0.2
+2023-03-26 13:35:14.298056,NceBitten: 5,SuspiciousForgiving
+2023-03-26 13:49:37.497108,NceBitten: 5,SuspiciousGrudge
+2023-03-26 13:56:15.117585,CoastClear,BudgetStretcher
+2023-03-26 14:06:38.400131,Cooperator,Grudge
+2023-03-26 14:19:51.471890,Cooperator,SuspiciousForgiving
+2023-03-26 14:29:49.597566,NceBitten: 5,SuspiciousGrudge
+2023-03-28 08:18:51.583934,Cooperator,Grudge
+2023-03-28 08:37:34.693782,NceBitten: 5,SuspiciousGrudge
+2023-03-28 12:36:24.104336,Cooperator,SuspiciousGrudge
+2023-03-28 12:45:28.677649,CoastClear,SuspiciousGrudge
+2023-03-28 12:58:23.620716,NceBitten: 5,SuspiciousGrudge
+2023-03-28 13:06:09.611817,NceBitten: 5,SuspiciousGrudge
+2023-03-28 13:12:36.283784,NceBitten: 5,SuspiciousForgiving
+2023-03-28 13:20:52.097405,Cooperator,SuspiciousGrudge
+2023-03-28 13:26:46.088564,NceBitten: 5,SuspiciousGrudge
+2023-03-28 13:35:19.914344,CoastClear,SuspiciousForgiving
+2023-03-30 18:55:53.654434,Cooperator,SuspiciousGrudge
+2023-03-30 19:05:19.834441,Cooperator,SuspiciousForgiving
+2023-03-30 19:13:43.198724,Cooperator,Random: 0.2
+2023-03-30 19:27:48.988407,CoastClear,SuspiciousForgiving
+2023-03-30 19:35:07.595298,Cooperator,SuspiciousForgiving
+2023-03-30 19:44:38.481120,NceBitten: 5,SuspiciousGrudge
+2023-03-30 19:53:06.122827,NceBitten: 5,SuspiciousGrudge
+2023-04-02 09:28:44.786867,NceBitten: 5,SuspiciousForgiving
+2023-04-02 09:34:57.536823,Cooperator,SuspiciousGrudge
+2023-04-02 09:44:23.362011,Cooperator,Grudge
+2023-04-02 09:52:54.893027,NceBitten: 5,SuspiciousGrudge
+2023-04-02 10:01:12.567089,Cooperator,Grudge
+2023-04-02 10:12:40.073117,NceBitten: 5,SuspiciousGrudge
+2023-04-02 10:17:57.356662,Cooperator,Grudge
+2023-04-02 10:28:12.853413,Careful,SuspiciousForgiving
+2023-04-02 10:36:40.259763,NceBitten: 5,BudgetStretcher
+2023-04-02 10:49:57.051311,CoastClear,SuspiciousForgiving
+2023-04-02 10:56:07.904284,Careful,SuspiciousForgiving
+2023-04-02 11:05:13.689259,Cooperator,SuspiciousForgiving
+2023-04-02 11:17:27.397428,Cooperator,SuspiciousForgiving
+2023-04-02 11:27:16.878482,CoastClear,Random: 0.2
+2023-04-02 11:40:56.469078,Cooperator,SuspiciousForgiving
+2023-04-02 11:50:59.589546,Cooperator,SuspiciousGrudge
+2023-04-02 12:04:59.144164,NceBitten: 5,SuspiciousGrudge
+2023-04-02 12:12:33.549524,Cooperator,Grudge
+2023-04-02 12:19:09.692490,CoastClear,Grudge
+2023-04-02 12:32:12.675084,Tit For 2 Tats,SuspiciousGrudge
+2023-04-04 17:10:02.362921,NceBitten: 5,SuspiciousGrudge
+2023-04-04 17:20:41.870060,NceBitten: 5,BudgetStretcher
+2023-04-04 17:27:41.766049,Cooperator,SuspiciousForgiving
+2023-04-04 17:35:05.367502,NceBitten: 5,Grudge
+2023-04-04 17:45:26.334075,NceBitten: 5,SuspiciousGrudge
+2023-04-04 17:54:00.459216,NceBitten: 5,SuspiciousGrudge
+2023-04-04 18:01:45.292591,Cooperator,SuspiciousGrudge
+2023-04-04 18:12:57.690053,NceBitten: 5,SuspiciousGrudge
+2023-04-04 18:27:40.967549,Cooperator,Random: 0.2
+2023-04-04 18:33:50.047047,CoastClear,SuspiciousGrudge
+2023-04-04 18:41:24.967707,Cooperator,Grudge
+2023-04-04 18:52:42.640008,Cooperator,SuspiciousGrudge
+2023-04-04 18:59:54.915655,NceBitten: 5,SuspiciousForgiving
+2023-04-04 19:08:02.705222,Cooperator,Grudge
+2023-04-04 19:17:17.169087,Cooperator,SuspiciousForgiving
+2023-04-04 19:23:55.971713,Cooperator,SuspiciousForgiving
+2023-04-04 19:30:47.874643,NceBitten: 5,Grudge
+2023-04-04 19:37:04.619446,NceBitten: 5,SuspiciousGrudge
+2023-04-04 19:46:22.358495,CoastClear,Random: 0.2
+2023-04-04 19:51:38.531422,Cooperator,SuspiciousGrudge
+2023-04-04 20:02:46.974781,Cooperator,SuspiciousGrudge
+2023-04-04 20:13:49.377960,CoastClear,SuspiciousForgiving
+2023-04-04 20:17:19.320646,Cooperator,BudgetStretcher
+2023-04-04 20:26:17.869001,NceBitten: 5,SuspiciousGrudge
+2023-04-04 20:33:26.787558,NceBitten: 5,SuspiciousForgiving
+2023-04-04 20:41:11.930385,NceBitten: 5,Random: 0.2
+2023-04-04 20:50:36.970118,NceBitten: 5,Grudge
+2023-04-04 21:04:58.048137,CoastClear,SuspiciousForgiving
+2023-04-06 18:54:05.993312,Cooperator,SuspiciousGrudge
+2023-04-06 19:01:17.437873,NceBitten: 5,SuspiciousGrudge
+2023-04-06 19:16:15.561213,Random: 0.8,Random: 0.2
+2023-04-06 19:27:26.131052,Careful,SuspiciousForgiving
+2023-04-06 19:35:13.594591,Cooperator,Grudge
+2023-04-06 19:43:51.604025,NceBitten: 5,Random: 0.2
+2023-04-06 19:51:20.908460,Random: 0.8,SuspiciousForgiving
+2023-04-06 19:59:11.508693,NceBitten: 5,SuspiciousGrudge
+2023-04-06 20:05:07.357674,Tit For 2 Tats,SuspiciousGrudge
+2023-04-06 20:13:44.295349,Random: 0.8,SuspiciousGrudge
+2023-04-06 20:23:48.964383,NceBitten: 5,SuspiciousGrudge
+2023-04-06 20:31:41.059378,NceBitten: 5,SuspiciousForgiving
+2023-04-06 20:38:11.864153,Cooperator,SuspiciousForgiving
+2023-04-06 20:47:09.803395,Random: 0.8,SuspiciousGrudge
+2023-04-06 20:55:00.429312,NceBitten: 5,Grudge
+2023-04-06 21:02:46.395995,NceBitten: 5,SuspiciousGrudge
