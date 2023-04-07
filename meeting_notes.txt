@@ -35,3 +35,7 @@ Meeting 2023-03-10
 - developed some strategies
 - idea:
   - one-sided Moran process: traders die out and reproduce, traders do not
+
+---------------------
+
+Meeting 2023-03-24
