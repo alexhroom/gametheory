@@ -33,3 +33,5 @@ winning_regulators <- (ggplot(wrbd.long, mapping=aes(x = fct_reorder(winning_reg
                     + guides(fill="none"))
 
 barplots <- ggarrange(winning_traders, winning_regulators, common.legend=TRUE, legend="right", ncol=1, nrow=2)
+
+ggsave("/home/alexhroom/Documents/University/Spring3/game/gametheory/barplot.png", barplots, width=800, height=500, units="px")
