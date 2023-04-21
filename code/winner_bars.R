@@ -3,8 +3,8 @@ library(magrittr)
 library(ggpubr)
 
 winners <- read.csv("/home/alexhroom/Documents/University/Spring3/game/gametheory/code/winners.csv")
-tppt <- read.csv("/home/alexhroom/Documents/University/Spring3/game/gametheory/code/trader_pop_per_turn.csv")
-rppt <- read.csv("/home/alexhroom/Documents/University/Spring3/game/gametheory/code/regulator_pop_per_turn.csv")
+tppt <- read.csv("/home/alexhroom/Documents/University/Spring3/game/gametheory/code/trader_survival.csv")
+rppt <- read.csv("/home/alexhroom/Documents/University/Spring3/game/gametheory/code/regulator_survival.csv")
 
 tppt %<>% rename(winning_trader=player_name, trader_ppt=pop_per_turn)
 rppt %<>% rename(winning_regulator=player_name, regulator_ppt=pop_per_turn)
@@ -33,5 +33,3 @@ winning_regulators <- (ggplot(wrbd.long, mapping=aes(x = fct_reorder(winning_reg
                     + guides(fill="none"))
 
 barplots <- ggarrange(winning_traders, winning_regulators, common.legend=TRUE, legend="right", ncol=1, nrow=2)
-
-ggsave("/home/alexhroom/Documents/University/Spring3/game/gametheory/barplot.png", barplots, width=800, height=500, units="px")

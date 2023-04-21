@@ -16,4 +16,3 @@ winners_heatmap <- (ggplot(winners, aes(winning_regulator, winning_trader, fill=
                     + labs(x="winning regulator", y="winning trader", fill="shared wins")
                     + theme(panel.background = element_rect(fill="#31013D"),
                             panel.grid.major=element_blank()))
-ggsave("/home/alexhroom/Documents/University/Spring3/game/gametheory/heatmap.png", winners_heatmap, width=800, height=500, units="px")
